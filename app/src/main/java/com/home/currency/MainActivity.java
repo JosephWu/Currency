@@ -47,42 +47,42 @@ public class MainActivity extends AppCompatActivity {
                     String message = constructMessage(ntdAmount, usdAmount, jpyAmount);
 
                     new AlertDialog.Builder(MainActivity.this)
-                            .setTitle("Result")
+                            .setTitle(R.string.result)
                             .setMessage(message)
-                            .setPositiveButton("OK", null)
+                            .setPositiveButton(getResources().getString(R.string.ok), null)
                             .show();
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "Input NTD Quantity!",
-                            Toast.LENGTH_SHORT).show();
+                    tvUSD.setText(getResources().getString(R.string.none));
+                    tvJPY.setText(getResources().getString(R.string.none));
                     new AlertDialog.Builder(MainActivity.this)
-                            .setTitle("Problem")
-                            .setMessage("Please enter your NTD amount")
-                            .setPositiveButton("OK", null)
+                            .setTitle(R.string.problem)
+                            .setMessage(R.string.enter_ntd_amount)
+                            .setPositiveButton(getResources().getString(R.string.ok), null)
                             .show();
                 }
             }
 
             private String constructMessage(double ntdAmount, double usdAmount, double jpyAmount) {
                 StringBuilder msg = new StringBuilder();
-                msg.append("Exchange rate: 1 USD = ");
+                msg.append(getResources().getString(R.string.exchange_rate_part1));
                 msg.append(USD2NTD);
-                msg.append(" NTD, and 1 JPY = ");
+                msg.append(getResources().getString(R.string.exchange_rate_part2));
                 msg.append(JPY2NTD);
-                msg.append(" NTD. \n\n");
+                msg.append(getResources().getString(R.string.exchange_rate_part3));
 
                 msg.append(myFormattedString(ntdAmount));
-                msg.append(" NTD can exchange \n");
+                msg.append(getResources().getString(R.string.result_msg_part1));
                 msg.append(myFormattedString(usdAmount));
-                msg.append(" USD or \n");
+                msg.append(getResources().getString(R.string.result_msg_part2));
                 msg.append(myFormattedString(jpyAmount));
-                msg.append(" JPY.");
+                msg.append(getResources().getString(R.string.result_msg_part3));
                 return msg.toString();
             }
 
 
             private String myFormattedString(double ntdAmount) {
-                return String.format("%.2f", ntdAmount);
+                return String.format(getResources().getString(R.string.str_format), ntdAmount);
             }
         });
 

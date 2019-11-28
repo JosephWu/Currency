@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Currency</string>
+    <string name="result">Result</string>
+    <string name="ok">OK</string>
+    <string name="problem">Problem</string>
+    <string name="enter_ntd_amount">Please enter your NTD amount</string>
+    <string name="exchange_rate_part1">Exchange rate: 1 USD =</string>
+    <string name="exchange_rate_part2">NTD, and 1 JPY =</string>
+    <string name="exchange_rate_part3">NTD.</string>
+    <string name="result_msg_part1">NTD can exchange</string>
+    <string name="result_msg_part2">USD or</string>
+    <string name="result_msg_part3">JPY.</string>
+    <string name="str_format">%.2f</string>
+    <string name="go">Go</string>
+    <string name="ntd">NTD</string>
+    <string name="jp">JP:</string>
+    <string name="none">None</string>
+    <string name="us">US:</string>
 </resources>

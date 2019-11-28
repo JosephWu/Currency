@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Currency</string>
+    <string name="enter_ntd_amount">請輸入台幣金額</string>
+    <string name="exchange_rate_part1">匯率：1 美金 ＝</string>
+    <string name="exchange_rate_part2">"台幣，1 日圓 = "</string>
+    <string name="exchange_rate_part3">台幣。</string>
+    <string name="go">計算</string>
+    <string name="jp">日圓：</string>
+    <string name="none">無</string>
+    <string name="ntd">台幣</string>
+    <string name="ok">確定</string>
+    <string name="problem">問題</string>
+    <string name="result">結果</string>
+    <string name="result_msg_part1">台幣可兌換</string>
+    <string name="result_msg_part2">美金或</string>
+    <string name="result_msg_part3">日圓。</string>
+    <string name="str_format">%.2f</string>
+    <string name="us">美金：</string>
+</resources>
