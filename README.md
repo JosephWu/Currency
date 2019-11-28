@@ -5,7 +5,7 @@ This is an assignment of one android course, including 3 parts:
 
 1. Constraint Layout
 
-2. AlertDialog
+2. AlertDialog.Builder
 
 3. Extract strings to resource and add locale: Traditional Chinese
 
